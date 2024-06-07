@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/txtWifiCheck"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Check Wifi Connection"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.283" />
+
+    <Button
+        android:id="@+id/btnBluetoothCheck"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:text="Bluthooth Permission Check"
+        app:layout_constraintEnd_toEndOf="@+id/btnWifi"
+        app:layout_constraintHorizontal_bias="0.527"
+        app:layout_constraintStart_toStartOf="@+id/btnWifi"
+        app:layout_constraintTop_toBottomOf="@+id/btnWifi" />
+
+    <Button
+        android:id="@+id/btnLocationCheck"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Location Permission Check"
+        app:layout_constraintEnd_toEndOf="@+id/btnBluetoothCheck"
+        app:layout_constraintHorizontal_bias="0.571"
+        app:layout_constraintStart_toStartOf="@+id/btnBluetoothCheck"
+        app:layout_constraintTop_toBottomOf="@+id/btnBluetoothCheck" />
+
+    <Button
+        android:id="@+id/btnInternetAvailablity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="Internet Availablity"
+        app:layout_constraintEnd_toEndOf="@+id/btnLocationCheck"
+        app:layout_constraintHorizontal_bias="0.527"
+        app:layout_constraintStart_toStartOf="@+id/btnLocationCheck"
+        app:layout_constraintTop_toBottomOf="@+id/btnLocationCheck" />
+
+    <Button
+        android:id="@+id/btnWifi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Check Wifi Connection"
+        app:layout_constraintEnd_toEndOf="@+id/txtWifiCheck"
+        app:layout_constraintHorizontal_bias="0.519"
+        app:layout_constraintStart_toStartOf="@+id/txtWifiCheck"
+        app:layout_constraintTop_toBottomOf="@+id/txtWifiCheck" />
+
+    <Button
+        android:id="@+id/btnVibratePermission"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Vibrate Permission"
+        app:layout_constraintEnd_toEndOf="@+id/btnInternetAvailablity"
+        app:layout_constraintStart_toStartOf="@+id/btnInternetAvailablity"
+        app:layout_constraintTop_toBottomOf="@+id/btnInternetAvailablity" />
+
+    <Button
+        android:id="@+id/btnAccelerometer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Check Accelerometer"
+        app:layout_constraintEnd_toEndOf="@+id/btnVibratePermission"
+        app:layout_constraintStart_toStartOf="@+id/btnVibratePermission"
+        app:layout_constraintTop_toBottomOf="@+id/btnVibratePermission" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
